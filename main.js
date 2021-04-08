@@ -26,7 +26,6 @@ firebase.initializeApp(firebaseConfig);
 
   //reference for the folder of the models
   let storageRef = storage.ref(folderPath[1]);
-console.log(storageRef);
   let pattRef = storage.ref();
   let modelRef = storage.ref();
 
@@ -35,6 +34,7 @@ console.log(storageRef);
       res.prefixes.forEach(folderRef => {
         // All the prefixes under listRef.
       folderRef.listAll().then(res =>{
+          console.log(res.items);
         let id = Math.floor((Math.random() * 100) + 1)
           pattRef.child(res.items[1].fullPath).getDownloadURL().then(url=>{
             let pattUrl = url.split("&");
