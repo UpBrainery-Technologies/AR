@@ -31,11 +31,11 @@ firebase.initializeApp(firebaseConfig);
 
 
     storageRef.listAll().then(res => {
-        console.log(res.prefixes);
       res.prefixes.forEach(folderRef => {
         // All the prefixes under listRef.
       folderRef.listAll().then(res =>{
         let id = Math.floor((Math.random() * 100) + 1)
+        console.log(res.items[1]);
           pattRef.child(res.items[1].fullPath).getDownloadURL().then(url=>{
             let pattUrl = url.split("&");
              createAMarker(pattUrl[0],id);
