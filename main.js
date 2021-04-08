@@ -25,7 +25,6 @@ firebase.initializeApp(firebaseConfig);
   
 
   //reference for the folder of the models
-console.log(storage.ref(folderPath[1]));
   let storageRef = storage.ref(folderPath[1]);
   let pattRef = storage.ref();
   let modelRef = storage.ref();
