@@ -1,12 +1,10 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyC4X3yyoqqn9BBHbu2IQ17YlFDnWOugfdQ",
-    authDomain: "upbraineryar1.firebaseapp.com",
-    databaseURL: "https://upbraineryar1.firebaseio.com",
-    projectId: "upbraineryar1",
-    storageBucket: "upbraineryar1.appspot.com",
-    messagingSenderId: "553878858794",
-    appId: "1:553878858794:web:b9a36c224ef3ece6dce753",
-    measurementId: "G-VZV8BTDFZE"
+  apiKey: "AIzaSyD72L_rL7tyFUSe6SntG1HbXtXII9USf_E",
+  authDomain: "booklet-ar.firebaseapp.com",
+  projectId: "booklet-ar",
+  storageBucket: "booklet-ar.appspot.com",
+  messagingSenderId: "358726433362",
+  appId: "1:358726433362:web:ccca519510c96cfb773d8b"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
