@@ -71,7 +71,7 @@ firebase.initializeApp(firebaseConfig);
    function createAEntity(url,id){
      let entityElement = document.createElement('a-entity');
      entityElement.setAttribute('position','.05 0 0');
-     entityElement.setAttribute('scale','.5 .5 .5');
+     entityElement.setAttribute('scale','.05 .05 .05');
      entityElement.setAttribute('rotation','0 0 0');
      entityElement.setAttribute('gltf-model',url);
      entityElement.setAttribute('class','clickable');
